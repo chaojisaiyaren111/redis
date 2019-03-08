@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.222.128:3306/jdbctest
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    initialSize: 5
+  redis:
+    host: 192.168.222.128
+    port: 6379
+mybatis:
+  config-location: classpath:mybatis-config.xml
+  mapper-locations: classpath:mapper/*.xml
+logging:
+  level:
+    com.springboot.cache.model.mapper: debug
+  #开启驼峰命名
+  #configuration:
+    #map-underscore-to-camel-case: true
+
+#打开sql日志
+
+
