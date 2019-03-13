@@ -7,6 +7,7 @@ import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 @MapperScan("com.springboot.model.mapper")
+@EnableCaching
 @SpringBootApplication
 public class RedisApplication {
 
